@@ -2,10 +2,10 @@ name: E2E tests
 
 on:
   workflow_dispatch:
-#  workflow_call:
-#    secrets:
-#      access-token:
-#        required: true
+  workflow_call:
+    secrets:
+      access-token:
+        required: true
 
 jobs:
   e2e-tests:

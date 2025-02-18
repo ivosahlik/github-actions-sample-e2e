@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e373cab2-5c1e-4778-887e-6c698a16397e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/e2e.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/e2e.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +100,7 @@
       <workItem from="1739909894101" duration="998000" />
       <workItem from="1739913745927" duration="555000" />
       <workItem from="1739914306919" duration="122000" />
-      <workItem from="1739914823159" duration="958000" />
+      <workItem from="1739914823159" duration="2172000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -109,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739915344081</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="step-2 - configuration">
+      <option name="closed" value="true" />
+      <created>1739915941560</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739915941560</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="step-2 - configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="step-2 - configuration" />
   </component>
 </project>
