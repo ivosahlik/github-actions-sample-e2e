@@ -16,10 +16,11 @@ jobs:
           echo "Github owner and repo: ${{ github.repository }}"
       - name: Checkout code
         uses: actions/checkout@v4
-#        with:
-#          repository: udemy-lauromueller/github-actions-course-example-e2e
-#          ref: main
-#          token: ${{ secrets.access-token || secrets.GITHUB_TOKEN }}
+        with:
+          repository: ivosahlik/github-actions-sample-e2e
+          ref: main
+          token: ${{ secrets.access-token || secrets.GITHUB_TOKEN }}
+          path: private-repo
       - name: Setup node
         uses: actions/setup-node@v4
         with:
