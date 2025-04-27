@@ -14,13 +14,13 @@ jobs:
       - name: Print github owner and repo
         run: |
           echo "Github owner and repo: ${{ github.repository }}"
-      - name: Checkout code
+      - name: Checkout private repo code
         uses: actions/checkout@v4
         with:
           repository: ivosahlik/github-actions-sample-e2e
           ref: main
           token: ${{ secrets.access-token || secrets.GITHUB_TOKEN }}
-          path: github-actions-sample-e2e
+#          path: github-actions-sample-e2e
       - name: Verify package.json exists
         run: |
           ls -la
