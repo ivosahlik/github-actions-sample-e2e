@@ -14,12 +14,12 @@ jobs:
       - name: Print github owner and repo
         run: |
           echo "Github owner and repo: ${{ github.repository }}"
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          repository: ivosahlik/github-actions-course-example-e2e
-          ref: main
-          token: ${{ secrets.access-token || secrets.GITHUB_TOKEN }}
+#      - name: Checkout code
+#        uses: actions/checkout@v4
+#        with:
+#          repository: ivosahlik/github-actions-course-example-e2e
+#          ref: main
+#          token: ${{ secrets.access-token || secrets.GITHUB_TOKEN }}
       - name: Setup node
         uses: actions/setup-node@v4
         with:
