@@ -20,7 +20,7 @@ jobs:
           repository: ivosahlik/github-actions-sample-e2e
           ref: main
           token: ${{ secrets.access-token || secrets.GITHUB_TOKEN }}
-#          path: github-actions-sample-e2e
+          path: github-actions-sample-e2e
       - name: Verify package.json exists
         run: |
           ls -la
