@@ -42,4 +42,8 @@ jobs:
           npm install
           npm ci
       - name: Run E2E tests
-        run: npm run test:e2e
+        run: |
+          ls -la
+          cd github-actions-sample-e2e
+          ls -la
+          npm run test:e2e
