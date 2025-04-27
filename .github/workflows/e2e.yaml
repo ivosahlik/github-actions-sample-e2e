@@ -6,10 +6,14 @@ on:
     secrets:
       access-token:
         required: true
-
+env:
+  working-directory: github-actions-sample-e2e
 jobs:
   e2e-tests:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.working-directory }}
     steps:
       - name: Print github owner and repo
         run: |
@@ -20,11 +24,12 @@ jobs:
           repository: ivosahlik/github-actions-sample-e2e
           ref: main
           token: ${{ secrets.access-token || secrets.GITHUB_TOKEN }}
-          path: private-repo
+          path: github-actions-sample-e2e
       - name: Verify package.json exists
         run: |
           ls -la
-          
+          cd github-actions-sample-e2e
+          ls -la
           if [ ! -f package.json ]; then
             echo "Error: package.json not found!"
             exit 1
