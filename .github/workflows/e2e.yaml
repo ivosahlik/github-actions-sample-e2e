@@ -6,14 +6,10 @@ on:
     secrets:
       access-token:
         required: true
-env:
-  working-directory: github-actions-sample-e2e
+
 jobs:
   e2e-tests:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ${{ env.working-directory }}
     steps:
       - name: Print github owner and repo
         run: |
